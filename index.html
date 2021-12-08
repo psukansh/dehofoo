@@ -244,72 +244,91 @@
 		</section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade">
+				<div class="slide-box">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores sapiente modi odio in,
+						ex commodi corporis obcaecati dicta repellat eius possimus, voluptatibus numquam quaerat sit
+						dolorum quidem excepturi velit aliquid nam provident eaque, quis perferendis ducimus. Aliquam,
+						pariatur enim?</p>
+					<p>-sukansh pendor</p>
+				</div>
+
+			</div>
+
+			<div class="mySlides fade">
+				<div class="slide-box">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores sapiente modi odio in,
+						ex commodi corporis obcaecati dicta repellat eius possimus, voluptatibus numquam quaerat sit
+						dolorum quidem excepturi velit aliquid nam provident eaque, quis perferendis ducimus. Aliquam,
+						pariatur enim?</p>
+					<p>-sukansh pendor</p>
+				</div>
+
+			</div>
+
+			<div class="mySlides fade">
+				<div class="slide-box">
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae asperiores sapiente modi odio in,
+						ex commodi corporis obcaecati dicta repellat eius possimus, voluptatibus numquam quaerat sit
+						dolorum quidem excepturi velit aliquid nam provident eaque, quis perferendis ducimus. Aliquam,
+						pariatur enim?</p>
+					<p>-sukansh pendor</p>
+				</div>
+
+			</div>
+
+			<!-- Next and previous buttons -->
+			<!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a> -->
+			<!-- <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+
+
+		<section class="footer">
+			<div class="content">
+				<div class="main-wrapper">
+					<div class="first-row">
+						<div class="address">
+
+							<h1>DeHoFoo</h1>
+							<h2>Rahtani Pune</h2>
+						</div>
+						<div class="testinomials">
+							<ul>
+								<li><a href="">Home</a></li>
+								<li><a href="">About</a></li>
+								<li><a href="">Contact</a></li>
+								<li><a href="">Blogs</a></li>
+								<li><a href="">Home chefs</a></li>
+								<li><a href="">Join us</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="second-row">
+						<img src="images/app.png" alt="" srcset="" width="150px" height="40px">
+						<div class="privacy">
+							<ul>
+								<li><a href="">Privacy policy</a></li>
+								<li><a href="">terms & conditions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<p>deHoFoo © 2021 All rights reserved.</p>
+			</div>
+		</section>
 
 	</div>
 
@@ -318,6 +337,25 @@
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init();
+	</script>
+
+	<script>
+		//slideshow 
+
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) { slideIndex = 1 }
+			slides[slideIndex - 1].style.display = "block";
+			setTimeout(showSlides, 9000); // Change image every 2 seconds
+		}
 	</script>
 
 

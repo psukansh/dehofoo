@@ -17,3 +17,4 @@ function myFunction1(){
 	cross.style.display='none';
 	drop_box.style.display='none'
 }
+
