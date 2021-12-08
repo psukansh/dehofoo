@@ -701,15 +701,22 @@
   .homepage .content .social-homepage {
     /* display: block; */
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     margin: 5px 0px;
+
+
+  }
+
+  .homepage .content .social-homepage .content{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
   .homepage {
     /* background-image: url("data:image/svg+xml,%3Csvg width='360' height='860' viewBox='0 0 360 860' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='360' height='860' fill='white'/%3E%3Cpath d='M479.558 48.6896L200.334 -137L-276 579.27L3.22413 764.96C3.22413 764.96 217.998 646.145 309.998 496.145C401.998 346.145 479.558 48.6896 479.558 48.6896Z' fill='%23FF0055'/%3E%3Cpath d='M435.7 48.8401L110.233 -167.602L-364.241 545.871L-38.7733 762.313C-38.7733 762.313 104 481 82 328C60 175 435.7 48.8401 435.7 48.8401Z' fill='%23C00040'/%3E%3C/svg%3E%0A"); */
-    background-image: linear-gradient(150deg, #ff0055 55%, white 45%);
+  background-image: linear-gradient(rgba(0,0,0,.5) 40%,white 60%),url('https://images.unsplash.com/photo-1481931098730-318b6f776db0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=390&q=80');
     /* background-size: 100% 100%; */
-    height: 760px;
+    height:100vh;
     background-repeat: no-repeat;
   }
 
@@ -748,13 +755,13 @@
     font-size: 30px;
     width: 100%;
     font-weight: 1000;
-    color: white;
+    color: rgb(255, 255, 255);
     border-radius: 10px;
   }
 
   .homepage .content .info-para-head {
     display: block;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 20px;
   }
 
@@ -763,6 +770,7 @@
     display: block;
     font-size: 13px;
     width: 80%;
+    color: rgb(255, 255, 255);
     /* background-color: gray; */
   }
 
