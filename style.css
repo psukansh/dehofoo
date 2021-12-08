@@ -24,7 +24,7 @@
 .drop-boxes .box-1 {
   width: 20%;
   height: 100vh;
-  background-color: rgb(255, 77, 121);
+  background-color: gray;
   animation-name: boxone;
   animation-iteration-count: 1;
   animation-duration: 0.2s;
@@ -42,7 +42,7 @@
 .drop-boxes .box-2 {
   width: 20%;
   height: 100vh;
-  background-color: rgb(255, 77, 121);
+  background-color: gray;
   animation-name: boxtwo;
   animation-iteration-count: 1;
   animation-duration: 0.4s;
@@ -60,7 +60,7 @@
 .drop-boxes .box-3 {
   width: 20%;
   height: 100vh;
-  background-color: rgb(255, 77, 121);
+  background-color: gray;
   animation-name: boxthree;
   animation-iteration-count: 1;
   animation-duration: 0.6s;
@@ -78,7 +78,7 @@
 .drop-boxes .box-4 {
   width: 20%;
   height: 100vh;
-  background-color: rgb(255, 77, 121);
+  background-color: gray;
   animation-name: boxfour;
   animation-iteration-count: 1;
   animation-duration: 0.8s;
@@ -96,7 +96,7 @@
 .drop-boxes .box-5 {
   width: 20%;
   height: 100vh;
-  background-color: rgb(255, 77, 121);
+  background-color: gray;
   animation-name: boxfive;
   animation-iteration-count: 1;
   animation-duration: 1s;
@@ -262,6 +262,7 @@
 
 .homepage .info .info-para-head {
   text-align: center;
+  display: none;
 }
 
 .homepage .info .site-info {
@@ -285,7 +286,7 @@
 }
 
 .homepage .content .social-homepage .content{
-  width: 50%;
+  width: 70%;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -309,11 +310,13 @@
 }
 
 .homepage .home-image{
+
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  display: none;
   margin: 30px 0px;
 }
 
@@ -381,7 +384,7 @@
 
 .photos-content .content {
   height: 100%;
-  background-color: gray;
+  /* background-color: gray; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -410,7 +413,6 @@
 
 .app-section {
   width: 100%;
-  height: 100%;
 }
 
 .app-section .content {
@@ -498,10 +500,27 @@
   }
   .homepage {
     /* background-image: url("data:image/svg+xml,%3Csvg width='360' height='860' viewBox='0 0 360 860' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='360' height='860' fill='white'/%3E%3Cpath d='M479.558 48.6896L200.334 -137L-276 579.27L3.22413 764.96C3.22413 764.96 217.998 646.145 309.998 496.145C401.998 346.145 479.558 48.6896 479.558 48.6896Z' fill='%23FF0055'/%3E%3Cpath d='M435.7 48.8401L110.233 -167.602L-364.241 545.871L-38.7733 762.313C-38.7733 762.313 104 481 82 328C60 175 435.7 48.8401 435.7 48.8401Z' fill='%23C00040'/%3E%3C/svg%3E%0A"); */
-    background-image: linear-gradient(150deg,#FF0055 50%,white 50%);
+    background-image: linear-gradient(150deg,#FF0055 55%,white 45%);
     /* background-size: 100% 100%; */
-    height: 860px;
+    height: 760px;
     background-repeat: no-repeat;
+  }
+
+  .homepage .content{
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+
+  .homepage .home-image{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* display: none; */
+    margin: 30px 0px;
   }
   .homepage .info {
     width: 95%;
@@ -529,6 +548,7 @@
   }
 
   .homepage .content .info-para-head {
+    display: block;
     color: white;
     margin: 20px;
   }
@@ -544,6 +564,16 @@
   .homepage .info .para {
     display: none;
   }
+
+
+
+.three-cards .content{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+
   .nav {
     display: none;
   }
@@ -569,19 +599,36 @@
     display: none;
   }
 
+  .app-section .content{
+    background-image: url('images/back.jpg');
+    background-size: 100% 100%;
+    font-weight: 500;
+  }
+
+  .app-section .content h1{
+    font-weight: 700;
+  }
+
+  .app-section .content .paragraph {
+    font-size: 14px;
+    font-weight: 800;
+    padding: 30px 0px;
+  }
+
   .app-section .content .image svg {
     display: none;
   }
   .app-section .content .image img {
-    width: 50%;
-    height: 200px;
+    width: 236px;
+    height: 157px;
     z-index: 10000;
   }
 
   .video iframe {
     width: 80%;
-    height: 300px;
+    height: 150px;
     margin: 20px;
+    border-radius: 10px;
   }
 
   .box {
@@ -599,7 +646,20 @@
     align-items: center;
     padding: 40px;
   }
+
+  .photos-content{
+    display: none;
+    
+  }
+
+  
+  
+  
+  
+
+
 }
+
 
 /* Smartphones (landscape) ----------- */
 @media only screen and (min-width: 321px) {
