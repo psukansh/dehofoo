@@ -14,5 +14,6 @@ function myFunction(){
 function myFunction1(){
 	menu_toggle.style.display='none';
 	banner.style.display='flex';
-	cross.style.display='none'
+	cross.style.display='none';
+	drop_box.style.display='none'
 }
