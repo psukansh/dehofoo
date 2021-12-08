@@ -290,11 +290,12 @@
   display: flex;
   justify-content: right;
   align-items: center;
-  height: 25px;
+  /* height: 25px; */
   background-color: black;
   color: white;
   font-size: 7px;
   border-radius: 25px;
+  padding: 8px;
 }
 
 .homepage .content .social-homepage .content li{
@@ -476,6 +477,8 @@
   width: 50%;
 }
 
+
+
 .download-landpage .content .photos-content {
   width: 50%;
   display: flex;
@@ -496,7 +499,7 @@
     display: flex;
     justify-content: right;
     align-items: center;
-    margin: 50px 0px;
+    margin: 5px 0px;
   }
   .homepage {
     /* background-image: url("data:image/svg+xml,%3Csvg width='360' height='860' viewBox='0 0 360 860' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='360' height='860' fill='white'/%3E%3Cpath d='M479.558 48.6896L200.334 -137L-276 579.27L3.22413 764.96C3.22413 764.96 217.998 646.145 309.998 496.145C401.998 346.145 479.558 48.6896 479.558 48.6896Z' fill='%23FF0055'/%3E%3Cpath d='M435.7 48.8401L110.233 -167.602L-364.241 545.871L-38.7733 762.313C-38.7733 762.313 104 481 82 328C60 175 435.7 48.8401 435.7 48.8401Z' fill='%23C00040'/%3E%3C/svg%3E%0A"); */
@@ -600,7 +603,8 @@
   }
 
   .app-section .content{
-    background-image: url('images/back.jpg');
+    /* background-image: url('images/back.jpg'); */
+    background-image: url("data:image/svg+xml,%3Csvg width='360' height='549' viewBox='0 0 360 549' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='261' y='169.074' width='184' height='28' rx='10' transform='rotate(-44.5465 261 169.074)' fill='%23FF0055'/%3E%3Crect x='-65' y='491.074' width='184' height='28' rx='10' transform='rotate(-44.5465 -65 491.074)' fill='%23FF0055'/%3E%3Crect x='-69' y='541.074' width='184' height='13.7048' rx='6.85241' transform='rotate(-44.5465 -69 541.074)' fill='%23FF725E'/%3E%3Crect x='276' y='127.074' width='184' height='13.7048' rx='6.85241' transform='rotate(-44.5465 276 127.074)' fill='%23FF725E'/%3E%3C/svg%3E%0A");
     background-size: 100% 100%;
     font-weight: 500;
   }
