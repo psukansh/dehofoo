@@ -1,0 +1,22 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 1517px;
+  height: 100%;
+}
+
+.homepage {
+  width: 100%;
+  background-image: url("data:image/svg+xml,%3Csvg width='1440' height='792' viewBox='0 0 1440 792' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.00001 4.24092e-05L1442 9.55716e-05L1442 66.0001L1.99998 354L2.00001 4.24092e-05Z' fill='%23D85580'/%3E%3Cpath d='M0.500058 347.5L1439.5 62.0001L1439.5 510.5L0.500052 791L0.500058 347.5Z' fill='%23FF6F9F'/%3E%3Cpath d='M4.67795e-05 472L1440 194L1440 510L8.86176e-05 792L4.67795e-05 472Z' fill='%23FF81AB'/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
+}
+
+.homepage .content {
+ 
+  background-size: 100% 100%;
+  height: 600px;
+  background-repeat: no-repeat;
+}
