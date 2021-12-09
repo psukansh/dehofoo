@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
+  font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -10,13 +13,165 @@
 
 .homepage {
   width: 100%;
-  background-image: url("data:image/svg+xml,%3Csvg width='1440' height='792' viewBox='0 0 1440 792' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.00001 4.24092e-05L1442 9.55716e-05L1442 66.0001L1.99998 354L2.00001 4.24092e-05Z' fill='%23D85580'/%3E%3Cpath d='M0.500058 347.5L1439.5 62.0001L1439.5 510.5L0.500052 791L0.500058 347.5Z' fill='%23FF6F9F'/%3E%3Cpath d='M4.67795e-05 472L1440 194L1440 510L8.86176e-05 792L4.67795e-05 472Z' fill='%23FF81AB'/%3E%3C/svg%3E ");
-  background-repeat: no-repeat;
+  /*  */
+  /* background-repeat: no-repeat; */
+  /* background-size: 100% 100%; */
 }
 
 .homepage .content {
- 
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_960_720.jpg");
   background-size: 100% 100%;
   height: 600px;
   background-repeat: no-repeat;
+}
+
+.homepage h1{
+  font-size: 100px;
+  font-weight: 1000;
+  color: white;
+}
+
+.mission-vision {
+  width: 100%;
+}
+
+.mission-vision .content {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.mission-vision .content img {
+  width: 300px;
+  height: 300px;
+}
+
+.mission-vision .vission {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* background-color: gray; */
+}
+
+.mission-vision .mission {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* background-color: gray; */
+}
+
+.mission-vision .info {
+  width: ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.mission-vision .image {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.mission-vision .info h1 {
+  font-style: normal;
+  font-weight:bolder;
+  font-size: 50px;
+  line-height: 70px;
+}
+
+.mission-vision .info p {
+  width: 550px;
+  margin: 30px;
+}
+
+.para {
+  text-align: center;
+  padding: 30px;
+}
+
+.para p span{
+  color: rgb(122, 122, 122);
+}
+
+.information{
+  padding: 30px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.information .content{
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.information .content .content-info{
+  margin: 20px;
+}
+
+.information .content .content-info h1{
+  font-weight: 1000;
+  font-size: 40px;
+}
+
+.information .content .content-info h1 span{
+  color: orange;
+  font-size: 20px;
+}
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  .mission-vision .info{
+    background-color: white;
+    box-shadow: rgba(0, 110, 255, 0.35) 0px 5px 15px;
+    margin: 20px;
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .mission-vision .info h1 {
+    font-style: normal;
+    font-weight:bolder;
+    font-size: 30px;
+    line-height: 70px;
+  }
+
+  .mission-vision .content img {
+    display: none;
+    display: none;
+  }
+
+  .mission-vision .info p {
+    width: 90%;
+    margin: 10px;
+  }
+
+  .homepage h1{
+    font-size: 50px;
+    font-weight: 1000;
+    color: white;
+  }
 }
