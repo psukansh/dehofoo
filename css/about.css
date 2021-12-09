@@ -21,7 +21,7 @@
 .homepage .content {
   background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("https://cdn.pixabay.com/photo/2016/12/16/15/25/christmas-1911637_960_720.jpg");
   background-size: 100% 100%;
-  height: 600px;
+  height: 100vh;
   background-repeat: no-repeat;
 }
 
@@ -33,10 +33,13 @@
 
 .mission-vision {
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mission-vision .content {
-  width: 100%;
+  width: 1300px;
   height: 100%;
   padding: 20px;
   display: flex;
@@ -105,7 +108,8 @@
 }
 
 .para p span{
-  color: rgb(122, 122, 122);
+  color: orange;
+  font-weight: bolder;
 }
 
 .information{
@@ -115,10 +119,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .information .content{
-  width: 80%;
+  width: 1300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,6 +144,87 @@
   color: orange;
   font-size: 20px;
 }
+
+.reviews{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews .content{
+  width: 1300px;
+  height: 560px;
+  background-image: url("../images/rev.png");
+  background-size: 100% 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews .content .review-box{
+  width: 400px;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  flex-direction: column;
+  background-color: white;
+  box-shadow: rgba(0, 110, 255, 0.35) 0px 5px 15px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.reviews .content .review-box .avatar{
+  display: flex;
+  justify-content: left;
+  align-items: left;
+
+}
+
+.reviews .content .review-box p{
+  font-size: 12px;
+}
+
+.reviews .content .review-box .comment{
+  font-size: 12px;
+  margin: 20px 0px;
+}
+
+.reviews .content .review-box .name p{
+  font-size: 8px;
+}
+
+.prev-next-button{
+  width: 150px;
+  background-color: rgb(0, 0, 0);
+  box-shadow: rgba(0, 110, 255, 0.35) 0px 5px 15px;
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  color: white;
+  padding: 8px;
+}
+
+.star i{
+  color: rgb(9, 255, 0);
+}
+
+.pre,.nex{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 10px;
+  
+}
+
+.pre i,.nex i{
+  font-size: 16px;
+  cursor: pointer;
+}
+
 
 
 
@@ -174,4 +260,66 @@
     font-weight: 1000;
     color: white;
   }
+
+  .mission-vision .info h1 {
+    font-size: 25px;
+  }
+
+  .information .content .content-info h1{
+    font-size: 25px;
+  }
+
+  .information .content .content-info h1 span{
+    font-size: 13px;
+  }
+
+  .information .content .content-info p{
+    font-size: 12px;
+  }
+
+  .reviews .content{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reviews .content .review-box{
+    width: 70%;
+  }
+}
+
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 767px){
+
+  .mission-vision .info{
+    width: 70%;
+    background-color: white;
+    box-shadow: rgba(0, 110, 255, 0.35) 0px 5px 15px;
+    margin: 20px;
+
+
+
+  }
+
+  .mission-vision .info p{
+    width: 90%;
+  }
+  .mission-vision .content{
+    width: 100%;
+  }
+
+  .reviews .content{
+    width: 100%;
+  }
+
+  .reviews .content{
+    width: 90%;
+  }
+
+  .mission-vision .content img {
+    display: none;
+    display: none;
+  }
+
 }
