@@ -20,12 +20,13 @@
   width: 100%;
   height: 100vh;
   display: flex;
+
 }
 
 .drop-boxes .box-1 {
   width: 20%;
   height: 100vh;
-  background-color: gray;
+  background-color: lightyellow;
   animation-name: boxone;
   animation-iteration-count: 1;
   animation-duration: 0.2s;
@@ -43,7 +44,7 @@
 .drop-boxes .box-2 {
   width: 20%;
   height: 100vh;
-  background-color: gray;
+  background-color: lightyellow;
   animation-name: boxtwo;
   animation-iteration-count: 1;
   animation-duration: 0.4s;
@@ -61,7 +62,7 @@
 .drop-boxes .box-3 {
   width: 20%;
   height: 100vh;
-  background-color: gray;
+  background-color: lightyellow;
   animation-name: boxthree;
   animation-iteration-count: 1;
   animation-duration: 0.6s;
@@ -79,7 +80,7 @@
 .drop-boxes .box-4 {
   width: 20%;
   height: 100vh;
-  background-color: gray;
+  background-color: lightyellow;
   animation-name: boxfour;
   animation-iteration-count: 1;
   animation-duration: 0.8s;
@@ -97,7 +98,7 @@
 .drop-boxes .box-5 {
   width: 20%;
   height: 100vh;
-  background-color: gray;
+  background-color: lightyellow;
   animation-name: boxfive;
   animation-iteration-count: 1;
   animation-duration: 1s;
@@ -148,8 +149,8 @@
   right: 5%;
   display: none;
   color: black;
-  background-color: white;
-  padding: 2px 5px;
+  background-color: rgb(0, 140, 255);
+  padding: 2px 8px;
 }
 
 .up-scroll {
@@ -180,7 +181,7 @@
   justify-content: center;
   align-items: center;
   padding: 8px;
-  background-color: #ff0055;
+  background-color: #FFBC0E;
   color: white;
 }
 
@@ -206,7 +207,7 @@
   margin: auto;
   padding: 8px;
   border-radius: 25px;
-  background-color: #ff0055;
+  background-color: #FFBC0E;
   width: 30%;
   display: flex;
   justify-content: center;
@@ -258,7 +259,7 @@
 }
 
 .homepage .info h1:nth-of-type(2) span {
-  color: #ff0055;
+  color: #FFBC0E;
 }
 
 .homepage .info .info-para-head {
@@ -300,8 +301,12 @@
   list-style-type: none;
 }
 
+.homepage .content .social-homepage .content li i{
+  margin-right: 5px;
+}
+
 .homepage .content .social-homepage .content li a {
-  color: white;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   margin: 5px;
 }
@@ -620,7 +625,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(180deg, #ff0055 50%, white 50%);
+  background-image: linear-gradient(180deg, #FFBC0E 50%, white 50%);
   color: rgb(0, 0, 0);
 }
 
@@ -693,8 +698,17 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   .banner {
     font-size: 12px;
-    background-color: white;
+    background-image: linear-gradient(120deg,orange 50%,white 50%);
     color: black;
+    
+    
+    
+    
+    
+  }
+
+  .three-cards{
+    background-color:rgb(255, 255, 255) ;
   }
 
   .homepage .content .social-homepage {
@@ -706,13 +720,19 @@
   }
 
   .homepage .content .social-homepage .content {
-    background-color: rgb(0, 0, 0);
+    background-color: orange;
     color: rgb(255, 255, 255);
   }
+
+  .homepage .content .social-homepage .content a{
+    font-size: 11px;
+    color: black;
+    font-weight: bold;
+  }
   .homepage {
-    /* background-image: url("data:image/svg+xml,%3Csvg width='360' height='860' viewBox='0 0 360 860' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='360' height='860' fill='white'/%3E%3Cpath d='M479.558 48.6896L200.334 -137L-276 579.27L3.22413 764.96C3.22413 764.96 217.998 646.145 309.998 496.145C401.998 346.145 479.558 48.6896 479.558 48.6896Z' fill='%23FF0055'/%3E%3Cpath d='M435.7 48.8401L110.233 -167.602L-364.241 545.871L-38.7733 762.313C-38.7733 762.313 104 481 82 328C60 175 435.7 48.8401 435.7 48.8401Z' fill='%23C00040'/%3E%3C/svg%3E%0A"); */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5) 40%, white 60%),
-      url("https://images.unsplash.com/photo-1481931098730-318b6f776db0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=390&q=80");
+    /* background-image: url("data:image/svg+xml,%3Csvg width='360' height='860' viewBox='0 0 360 860' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='360' height='860' fill='white'/%3E%3Cpath d='M479.558 48.6896L200.334 -137L-276 579.27L3.22413 764.96C3.22413 764.96 217.998 646.145 309.998 496.145C401.998 346.145 479.558 48.6896 479.558 48.6896Z' fill='%23FFBC0E'/%3E%3Cpath d='M435.7 48.8401L110.233 -167.602L-364.241 545.871L-38.7733 762.313C-38.7733 762.313 104 481 82 328C60 175 435.7 48.8401 435.7 48.8401Z' fill='%23C00040'/%3E%3C/svg%3E%0A"); */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2) 30%, rgb(255, 255, 255) 70%),
+      url("https://expertphotography.b-cdn.net/wp-content/uploads/2020/06/diy-food-background.jpg");
     /* background-size: 100% 100%; */
     height: 100vh;
     background-repeat: no-repeat;
@@ -730,7 +750,7 @@
     justify-content: center;
     align-items: center;
     /* display: none; */
-    margin: 30px 0px;
+    margin: 20px 0px;
   }
   .homepage .info {
     width: 95%;
@@ -747,19 +767,19 @@
 
   .homepage .info h1:nth-of-type(2) {
     margin: 5px 0px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-      url("images/join\ us.jpg");
+    background-image:linear-gradient(120deg,white,lightyellow);
+    background-size: 100% 100%;
     padding: 20px;
     font-size: 30px;
     width: 100%;
     font-weight: 1000;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     border-radius: 10px;
   }
 
   .homepage .content .info-para-head {
     display: block;
-    color: rgb(255, 255, 255);
+    color: orange;
     margin: 20px;
   }
 
@@ -810,7 +830,7 @@
 
   .app-section .content {
     /* background-image: url('images/back.jpg'); */
-    background-image: url("data:image/svg+xml,%3Csvg width='360' height='549' viewBox='0 0 360 549' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='261' y='169.074' width='184' height='28' rx='10' transform='rotate(-44.5465 261 169.074)' fill='%23FF0055'/%3E%3Crect x='-65' y='491.074' width='184' height='28' rx='10' transform='rotate(-44.5465 -65 491.074)' fill='%23FF0055'/%3E%3Crect x='-69' y='541.074' width='184' height='13.7048' rx='6.85241' transform='rotate(-44.5465 -69 541.074)' fill='%23FF725E'/%3E%3Crect x='276' y='127.074' width='184' height='13.7048' rx='6.85241' transform='rotate(-44.5465 276 127.074)' fill='%23FF725E'/%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg width='360' height='549' viewBox='0 0 360 549' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='261' y='169.074' width='184' height='28' rx='10' transform='rotate(-44.5465 261 169.074)' fill='%23FFBC0E'/%3E%3Crect x='-65' y='491.074' width='184' height='28' rx='10' transform='rotate(-44.5465 -65 491.074)' fill='%23FFBC0E'/%3E%3Crect x='-69' y='541.074' width='184' height='13.7048' rx='6.85241' transform='rotate(-44.5465 -69 541.074)' fill='%23FF725E'/%3E%3Crect x='276' y='127.074' width='184' height='13.7048' rx='6.85241' transform='rotate(-44.5465 276 127.074)' fill='%23FF725E'/%3E%3C/svg%3E%0A");
     background-size: 100% 100%;
     font-weight: 500;
   }
@@ -831,7 +851,7 @@
   .app-section .content .image img {
     width: 236px;
     height: 157px;
-    z-index: 10000;
+    z-index: 1000;
   }
 
   .video iframe {
@@ -863,7 +883,7 @@
 
   .mySlides {
     width: 100%;
-    background-image: url("data:image/svg+xml,%3Csvg width='360' height='416' viewBox='0 0 360 416' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='-90.75' y='317.566' width='560' height='119.262' transform='rotate(-34.482 -90.75 317.566)' fill='%23FF0055'/%3E%3C/svg%3E%0A");
+    background-image: url("data:image/svg+xml,%3Csvg width='360' height='416' viewBox='0 0 360 416' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='-90.75' y='317.566' width='560' height='119.262' transform='rotate(-34.482 -90.75 317.566)' fill='%23FFBC0E'/%3E%3C/svg%3E%0A");
   }
 
   .mySlides img {
