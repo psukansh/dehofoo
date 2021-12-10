@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-homepage {
+	margin: 20px 0px;
+	width: 100%;
+	background-color: rgb(255, 255, 255);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-homepage .content{
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('../images/contact.jpg');
+	width: 1520px;
+	height: 450px;
+	background-size: 100% 100%;
+}
+
+.contact-homepage .content h1{
+	font-size: 80px;
+	color: white;
+	font-weight: 1000;
+}
+
+.details-cards{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.details-cards .content{
+	width: 1500px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.details-cards .content .detail-card{
+	width: 300px;
+	height: 100px;
+	padding: 10px;
+	margin: 20px;
+	background-color: rgb(51, 51, 51);
+	border-radius: 2px;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.details-cards .content .detail-card .details{
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.details-cards .content .detail-card .details i{
+	font-size: 25px;
+}
+
+.details-cards .content .detail-card .details p:nth-last-of-type(1){
+	font-size: 11px;
+}
+
+.map{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.map .content{
+	width: 1200px;
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+	.contact-homepage .content{
+		background-image: linear-gradient(white,white);
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+
+	.contact-homepage .content h1{
+		color: black;
+	}
+
+	.map .content{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.map .content iframe{
+		width: 90%;
+	}
+}
