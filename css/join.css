@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.join-homepage {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.join-homepage .content {
+  width: 1300px;
+  height: 700px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.join-homepage .content h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  padding: 20px;
+  /* background-color: rgb(216, 216, 216) */
+}
+
+form input {
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid rgb(0, 0, 0);
+  height: 25px;
+  margin: 7px 0px;
+}
+
+form button {
+  width: 150px;
+  margin: 30px 0px;
+  background-color: black;
+  outline: none;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+	.join-homepage .content{
+		background-image:url('../images/join\ us\ back.jpg');
+	}
+  form {
+    width: 90%;
+  }
+
+  input {
+    background-color: transparent;
+    border: 1px solid orange;
+  }
+  label {
+    font-size: 12px;
+  }
+}
