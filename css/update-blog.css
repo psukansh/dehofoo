@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.write-blog{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.write-blog .content{
+	width: 1300px;
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	flex-direction: column;
+}
+
+.write-blog .content .form-content{
+	width: 80%;
+	/* background-color: gray; */
+	padding: 20px;
+}
+
+.write-blog .content .form-content form{
+	display: flex;
+	flex-direction: column;
+}
+
+.write-blog .content .form-content form .write-blog-social{
+	display: flex;
+	flex-direction: column;
+}
+
+.write-blog .content .form-content form .write-blog-social p{
+	font-size: 9px;
+	width: 60%;
+}
+
+.write-blog .content .form-content form button{
+	width: 150px;
+	margin: 20px 0px;
+	outline: none;
+	border: none;
+	background-color: yellowgreen;
+	padding: 8px;
+}
+
+label{
+	font-size: 13px;
+	font-weight: 500;
+}
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+
+	.write-blog .content .form-content form{
+		width: 100%;
+	}
+
+	.write-blog .content .form-content form input,textarea{
+		width: 95%;
+		height: 25px;
+	}
+
+	.write-blog .content .form-content form textarea{
+		height: 50px;
+
+	}
+
+	.write-blog .content .form-content form textarea:nth-of-type(3){
+		height: 300px;
+	}
+
+	.write-blog .content .form-content form .write-blog-social{
+		width: 100%;
+		/* background-color: yellowgreen; */
+		display: flex;
+		/* justify-content: center; */
+		/* align-items: center; */
+		padding: 10px;
+		margin: auto;
+	}
+
+
+
+}

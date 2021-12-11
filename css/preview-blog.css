@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.preview-blog{
+	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.preview-blog .content{
+	width: 1300px;
+	/* background-color: gray; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.preview-blog .content .blog{
+	display: flex;
+	flex-direction: column;
+	width: 700px;
+}
+
+.preview-blog .content .blogger-name{
+	background-color: rgb(43, 255, 0);
+	position: relative;
+	margin-top: -70px;
+	width: 30%;
+	color: black;
+
+}
+
+.preview-blog .content .blog li{
+	float: left;
+	list-style-type: none;
+	margin: 10px;
+}
+
+.preview-blog .content .blog li i{
+	background-color: blue;
+	color: white;
+	border-radius: 25px;
+	padding: 3px;
+
+}
+
+.preview-blog .content .blog li a{
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.preview-blog .content .blog .blog-report{
+	font-size: 12px;
+}
+
+#submit{
+	width: 150px;
+	outline: none;
+	border: none;
+	background-color: orange;
+	padding: 8px;
+	color: white;
+	cursor: pointer;
+	margin: 20px 0px;
+}
+
+#update{
+	width: 150px;
+	outline: none;
+	border: none;
+	background-color: yellowgreen;
+	padding: 8px;
+	color: white;
+	cursor: pointer;
+	margin: 20px 0px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px){
+
+
+	.preview-blog .content .blogger-name{
+		width: 70%;
+	}
+
+	.preview-blog .content{
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.preview-blog .content .blog{
+		display: flex;
+		/* justify-content: center; */
+		/* align-items: center; */
+		flex-direction: column;
+		width: 80%;
+	}
+
+	.preview-blog .content .blog img{
+		width: 100%;
+	}
+
+	.preview-blog .content .blog li i{
+		font-size: 9px;
+	}
+
+	.preview-blog .content .blog li a{
+		font-size: 10px;
+	}
+
+	.preview-blog .content .blog .heading h3{
+		font-size: 14px;
+	}
+
+}
