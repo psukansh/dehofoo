@@ -6,168 +6,69 @@
   font-family: "Poppins", sans-serif;
 }
 
-.view-blog{
+.write-blog{
 	width: 100%;
 	background-color: white;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 }
 
-.view-blog .content{
+.write-blog .content{
 	width: 1300px;
 	display: flex;
-	/* justify-content: center; */
-	align-items: center;
+	/* justify-content: left; */
+	/* align-items: center; */
+	flex-direction: column;
+}
 
+.write-blog .content .form-content{
 	/* background-color: gray; */
+	padding: 20px;
 }
 
-.view-blog .content .main-blog{
-	width: 70%;
-	/* background-color: yellow; */
+.write-blog .content .form-content form{
 	display: flex;
-	justify-content: left;
-	align-items: left;
 	flex-direction: column;
-	padding: 30px;
 }
 
-.view-blog .content .main-blog .main-image .blogger-name{
-	background-color: rgb(43, 255, 0);
-	position: relative;
-	margin-top: -70px;
-	width: 30%;
-	color: black;
-
-}
-
-.view-blog .content .main-blog {
+.write-blog .content .form-content form .write-blog-social{
 	margin: 20px 0px;
+	width: 40%;
+	display: flex;
+	flex-direction: column;
 }
 
-.view-blog .content .main-blog li{
+.write-blog .content .form-content form .write-blog-social input{
 	float: left;
-	list-style-type: none;
-	margin: 10px;
+	border: 1px solid rgb(0, 0, 0);
 }
 
-.view-blog .content .main-blog li a{
-	text-decoration: none;
-	color: black;
-	margin: 0px 5px;
+.write-blog .content .form-content form .write-blog-social p{
 	font-size: 12px;
 }
 
-.view-blog .content .main-blog li a i{
-	color: rgb(255, 255, 255);
-	background-color: rgb(0, 204, 255);
-	padding: 3px;
-	border-radius: 25px;
+.write-blog .content .form-content form button{
+	width: 150px;
+	border: none;
+	outline: none;
+	background-color: yellowgreen;
+	padding: 10px;
 }
-
-.view-blog .content .main-blog .heading h3{
-	font-size: 24px;
-	font-weight: 1000;
-	width: 80%;
-	margin: 20px 0px;
-}
-
-.view-blog .content .main-blog .blog-report{
-	width: 80%;
-}
-
-
-.view-blog .content .other-blogs{
-	width: 30%;
-	position: relative;
-	margin-top: -250px;
-	
-}
-
-.view-blog .content .other-blogs .content{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-}
-
-.view-blog .content .other-blogs .content .other-blogs-box{
-	width: 350px;
-	height: 100px;
-	display: flex;
-	background-color: rgb(214, 255, 227);
-	padding: 8px;
-	margin: 10px 0px;
-}
-
-.view-blog .content .other-blogs .content .other-blogs-box .other-blogs-details{
-	margin: 0px 10px;
-}
-
-.view-blog .content .other-blogs .content .other-blogs-box img{
-	width: 100px;
-	height: 100%;
-}
-
-.view-blog .content .other-blogs .content .other-blogs-box p{
-	font-size: 12px;
-	
-}
-
-.view-blog .content .other-blogs .content .other-blogs-box .head p{
-	font-weight: 500;
-}
-
-
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
-	
-.view-blog .content{
-	
-	flex-direction: column;
-}
+	.write-blog .content .form-content form .write-blog-social{
+		width: 100%;
+	}
 
-.view-blog .content .main-blog{
-	width: 100%;
-}
+	.write-blog .content .form-content form label{
+		font-size: 13px;
+		font-weight: 500;
+	}
 
-.view-blog .content .main-blog img{
-	width: 100%;
+	.write-blog .content .form-content form input ,textarea{
+		margin: 10px 0px;
+	}
 
-}
-
-.view-blog .content .main-blog .main-image .blogger-name{
-	width: 70%;
-}
-
-.view-blog .content .main-blog li{
-	margin:20px 3px;
-}
-
-
-.view-blog .content .main-blog .blog-report{
-	width: 100%;
-}
-
-.view-blog .content .main-blog .blog-report {
-	font-size: 12px;
-}
-
-
-.view-blog .content .main-blog .heading h3{
-	font-size: 15px;
-	width: 100%;
-}
-
-.view-blog .content .other-blogs{
-	width: 100%;
-	position: relative;
-	margin-top: 0px;
-	
-}
-}
-
-.view-blog .content .other-blogs .content .other-blogs-box{
-	width: 95%;
 }
