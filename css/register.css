@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+
+.login-container{
+	width: 100%;
+	height: 100vh;
+	background-color: rgb(0, 30, 49);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.login-container .content{
+	width: 1300px;
+	height: 400px;
+	/* background-color: white; */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.login-container .content form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: rgb(255, 255, 255);
+	padding: 10px;
+}
+
+.login-container .content form .form-content{
+	display: flex;
+	flex-direction: column;
+}
+
+.login-container .content form .form-content button{
+	width: 200px;
+	border: none;
+	outline: none;
+	background-color: black;
+	padding: 5px;
+	color: white;
+	font-size: 17px;
+	cursor: pointer;
+}
+
+.login-container .content form .form-content input{
+	width: 500px;
+	margin: 10px 0px;
+	height: 30px;
+	background-color: transparent;
+}
+
+.login-container .content form .form-content label{
+	font-size: 12px;
+}
+
+.login-container .content form .form-content p{
+	color: blue;
+	font-size: 13px;
+}
